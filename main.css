@@ -1,10 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Saira+Condensed:wght@300&display=swap');
 
+body{
+
+    font-family: 'Saira Condensed', sans-serif;
+
+}
+
+:root{
+    --primary-color: #fb923c;
+    
+}
 
 .container{
 
     display: flex;
     flex-direction: column;
     width: 50vw;
+}
+
+.change-table{
+
+    border-collapse: collapse;
+    /* margin: auto; */
+    
+}
+
+tr{
+
+   display: table-row;
+
+}
+
+td{
+
+    display: table-cell;
+    text-align: center;
+
+}
+
+th{
+
+    display: table-cell;
+    font-weight: bold;
+    text-align: center;
+}
+
+th,td{
+ 
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    width: 0%;
+}
+
+.heading{
+
+   color: #fb923c;
+
+}
+
+h1{
+    font-size: 2em;
+    font-weight: bold;
+
+
 
 
 }
