@@ -7,6 +7,7 @@ body{
     font-family: 'Saira Condensed', sans-serif;
     margin-top: 3rem;
     margin-bottom: 1rem;
+    background-color: #bae6fd;
     
 
 }
@@ -40,6 +41,8 @@ td{
 
     display: table-cell;
     text-align: center;
+    font-weight: bold;
+    word-spacing: 0.1rem;
 
 }
 
@@ -52,7 +55,7 @@ th{
 
 th,td{
  
-    border: 1px solid var(--primary-color);
+    border: 2px solid var(--primary-color);
     padding: 1rem;
     width: 0%;
 }
@@ -67,5 +70,110 @@ th,td{
 h1{
     font-size: 2em;
     font-weight: bold;
+    word-spacing: 0.2rem;
+}
+
+.description{
+
+    margin: auto;
+    font-size:larger;
+    font-weight: 550;
+    padding: 1rem;
+    word-spacing: 0.1rem;
+    text-align: center;
     
 }
+
+label{
+
+    font-size: larger;
+    font-weight: bold;
+    margin: auto;
+    padding: 1rem;
+}
+
+input{
+    margin: auto;
+    font-size: 14px;
+    outline: #fff;
+    padding: 0.6rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    width: 30%;
+   
+}
+
+  button {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    outline:none;
+    display: block;
+    margin: auto;
+    margin-top: 1.2rem;
+    width: 20%;
+    font-size: larger;
+    border-color:#fb923c;
+}
+
+caption{
+
+    font-size: x-large;
+    word-spacing: 0.3rem;
+    padding: 1rem;
+    margin: 1rem auto;
+    font-weight: 600;
+}
+
+#error-message{
+
+    font-size:larger;
+    margin: auto;
+    margin-top: 1rem;
+    word-spacing: 0.3rem;
+}
+
+footer p {
+    font-size: large;
+    text-align: center;
+    padding-top: 3rem;
+    word-spacing: 0.4rem;
+}
+
+.list-non-bullet {
+
+    list-style: none;
+
+}
+
+.list-item-inline {
+
+    display: inline;
+    padding: 0rem 0.5rem;
+    margin: auto;
+
+}
+
+img{
+
+    width: 30px;
+
+
+}
+
+a,img,li{
+
+    display: inline;
+}
+
+ul{
+    
+}
+
+
+
+
