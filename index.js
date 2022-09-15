@@ -22,7 +22,10 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
         if (billAmountNum > 0) {
             labelOfCashGiven.style.display = "block";
             cashGiven.style.display = "block";
-            if (cashGivenNum === 0) {
+            if(cashGivenNum === billAmountNum){
+                showMessage("No change is required !")
+            }
+             else if (cashGivenNum === 0) {
                 showMessage("Enter cash given")
             } else if (cashGivenNum < 0) {
                 showMessage("Enter only positive value for cash")
