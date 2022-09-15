@@ -3,10 +3,13 @@ const cashGiven = document.querySelector("#cash-given");
 const checkButton = document.querySelector("#check-button");
 const message = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
+const labelOfCashGiven = document.querySelector('[for = "cash-given"]');
 
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 
 cashGiven.style.display = "none";
+labelOfCashGiven.style.display = "none";
+
 
 
 
@@ -17,6 +20,7 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
     if (billAmountNum) {
         hideMessage();
         if (billAmountNum > 0) {
+            labelOfCashGiven.style.display = "block";
             cashGiven.style.display = "block";
             if (cashGivenNum === 0) {
                 showMessage("Enter cash given")
