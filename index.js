@@ -46,6 +46,7 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
             showMessage("Invalid Bill Amount");
         }
     } else {
+        resetTable();
         showMessage("Please Enter Bill Amount !");
     }
 });
