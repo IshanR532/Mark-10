@@ -23,24 +23,26 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
             labelOfCashGiven.style.display = "block";
             cashGiven.style.display = "block";
             if(cashGivenNum === billAmountNum){
-                for( i = 0; i < noOfNotes.length; i++){
-                    noOfNotes[i].innerText = "";
-               }
+                resetTable();
                 showMessage("No change is required !")
             }
              else if (cashGivenNum === 0) {
+                resetTable();
                 showMessage("Enter cash given")
             } else if (cashGivenNum < 0) {
+                resetTable();
                 showMessage("Enter only positive value for cash")
             } else {
                 if (cashGivenNum >= billAmountNum) {
                     const amountToBeReturned = cashGivenNum - billAmountNum;
                     calculateChange(amountToBeReturned);
                 } else {
+                    resetTable();
                     showMessage("The cash given is insufficient");
                 }
             }
         } else {
+            resetTable();
             showMessage("Invalid Bill Amount");
         }
     } else {
@@ -64,6 +66,12 @@ function calculateChange(amountToBeReturned) {
 
 function hideMessage() {
     message.style.display = "none";
+}
+
+function resetTable(){
+    for( i = 0; i < noOfNotes.length; i++){
+        noOfNotes[i].innerText = "";
+   }
 }
 
 
