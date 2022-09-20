@@ -23,6 +23,9 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
             labelOfCashGiven.style.display = "block";
             cashGiven.style.display = "block";
             if(cashGivenNum === billAmountNum){
+                for( i = 0; i < noOfNotes.length; i++){
+                    noOfNotes[i].innerText = "";
+               }
                 showMessage("No change is required !")
             }
              else if (cashGivenNum === 0) {
